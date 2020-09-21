@@ -52,9 +52,9 @@ print("Starting video stream")
 
 
 
-#url = 'http://192.168.43.1:8082/shot.jpg'
+#url = 'ip/shot.jpg'
 
-#vs = cv2.VideoCapture('http://192.168.43.1:8082')
+#vs = cv2.VideoCapture('ip')
 vs=cv2.VideoCapture(0)
 vs.set(cv2.CAP_PROP_FRAME_WIDTH, 480)
 vs.set(cv2.CAP_PROP_FRAME_HEIGHT, 640)
@@ -110,8 +110,8 @@ mqttc.on_connect = on_connect
 mqttc.on_publish = on_publish
 mqttc.on_subscribe = on_subscribe
 mqttc.on_log = on_log
-mqttc.username_pw_set("cpfiujxexh", "0ewrR1pH_favG1t7")
-mqttc.connect('m16.cloudmqtt.com',17887, 60)
+mqttc.username_pw_set("your_username", "your_password") #your cloudmqtt credentials
+mqttc.connect('m16.cloudmqtt.com',your_port_no, 60)
 mqttc.loop_start()
 
 mqttc.subscribe("UpdatedSlot")
