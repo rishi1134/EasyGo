@@ -1,6 +1,7 @@
 python 3.x
 opencv 3.x
 paho-mqtt
+phpMQTT
 wamp64
 html
 css
