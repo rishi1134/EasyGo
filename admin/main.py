@@ -16,15 +16,9 @@ import urllib.parse
 import requests
 import json
 import os.path
-#import geocoder
-#from flask import Flask, redirect, url_for, request, render_template
-#from werkzeug.utils import secure_filename
-#from gevent.pywsgi import WSGIServer
 
-
-
-prototxt='MobileNetSSD_deploy.prototxt.txt'
-model='MobileNetSSD_deploy.caffemodel'
+prototxt='./EasyGo/model/MobileNetSSD_deploy.prototxt.txt'
+model='./EasyGo/model/MobileNetSSD_deploy.caffemodel'
 
 #For creating mouse click events manually
 def mouse_drawing(event, x, y, flags, params):
@@ -68,7 +62,7 @@ time.sleep(2.0)
 fps = FPS().start()
 counter=0
 #Using pickle lib.--open file.txt
-circles = pickle.load(open('file.txt', 'rb'))
+circles = pickle.load(open('slotCoords.txt', 'rb'))
 i=0
 j=0
 k=[]
