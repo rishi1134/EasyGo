@@ -29,3 +29,17 @@ user can get the information about empty slots available. <br />
 
 # Flow Chart
 ![alt text](https://github.com/rishi1134/EasyGo/blob/master/output/flowDiagram.png?raw=true)
+
+# Steps
+1) [ADMIN] Create slots with makeSlots.py. The slots will be saved in slotCoords.txt. <br />
+![alt text](https://github.com/rishi1134/EasyGo/blob/master/output/admin_drawSlots.png?raw=true)
+
+2) [ADMIN] Run the main.py script on the hardware board for slot detection. <br />
+![alt text](https://github.com/rishi1134/EasyGo/blob/master/output/detection.png?raw=true)
+
+3) [USER] Website UI <br />
+![alt text](https://github.com/rishi1134/EasyGo/blob/master/output/welcomeScreen.png?raw=true)
+![alt text](https://github.com/rishi1134/EasyGo/blob/master/output/mapScreen2.png?raw=true)
+![alt text](https://github.com/rishi1134/EasyGo/blob/master/output/bookingScreen.png?raw=true)
+![alt text](https://github.com/rishi1134/EasyGo/blob/master/output/confirmScreen.png?raw=true)
+
