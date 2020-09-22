@@ -4,5 +4,5 @@ paho-mqtt
 wamp64
 html
 css
-php
+php 7.2.18
 MobileNetSSD
