@@ -1,0 +1,195 @@
+<html>
+<head>
+<style>
+*
+{
+  margin:0;
+  padding:0;
+}
+.hero
+{
+	height:100vh;
+	width:100%;
+	background-image:url(sky.jpg);
+	background-size:cover;
+	background_position:center;
+	position:relative;
+	overflow-x:hidden;
+}
+
+.highway
+{
+	
+	height:200px;
+	width:500%;
+	display:block;
+	background-image:url(road.jpg);
+	position:absolute;
+	bottom:0;
+	left:0;
+	right:0;
+	z-index:1;
+	background_repeat:repeat-x;
+	animation:highway 5s linear infinite;
+}
+@keyframes highway 
+{
+	100%{
+		transform:translateX(-3400px);
+	}
+}
+.city
+{
+	height:250px;
+	width:500%;
+	background-image:url(city.png);	
+	position:absolute;
+	bottom:200px;
+	left:0;
+	right:0;
+		display:block;
+		z-index:1;
+	background_repeat:repeat-x;
+	animation:city 20s linear infinite;
+}
+
+@keyframes city 
+{
+	100%{
+		transform:translateX(-1400px);
+	}
+}
+.car
+{
+	width:400px;
+	left:50%;
+	bottom:100px;
+	z-index:2;
+	position:absolute;
+	transform:translateX(-50%);
+}
+.car img
+{
+	width:100%;
+	animation:car 1s linear infinite;
+}
+@keyframes car
+{
+	100%{
+		transform:translateY(-1px);
+	}
+	50%{
+		transform:translateY(-1px);
+	}
+	0%{
+		transform:translateY(-1px);
+	}
+}
+.wheel
+{
+  left:50%;
+	bottom:178px;
+	z-index:2;
+	position:absolute;
+	transform:translateX(-50%);
+}
+.wheel img
+{
+   width:72px;
+   height:72px;
+   animation:wheel 1s linear infinite;
+} 
+.back-wheel{
+ left:-165px;
+ position:absolute;
+}
+
+.front-wheel{
+ left:80px;
+ position:absolute;
+}
+
+@keyframes wheel
+{
+	100%{
+		transform:rotate(360deg);
+	}
+}
+.k1{
+  display:inline;
+  heigth:100px;
+  width:100px;
+    padding:10px;
+  border:2px solid black;
+  background-color:transparent;
+  color:blue;
+  margin-top:40px;
+    margin-left:900px;
+  text-width:2px;
+  border-radius:5px;
+  border-color:white;
+ }
+.p1p{
+margin-left:15px;
+margin-top:5px;
+
+}
+p{
+font-size:100px;
+color:#001a1a;	
+}
+h3{
+margin-left:15px;
+color: #008000;
+}
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 5px; 
+  margin-right:10px;
+  float:right;
+  cursor: pointer;
+}
+.button1 {
+  background-color: transparent; 
+  color: black; 
+  border: 1px solid #f44336;
+  border-radius:4px;
+}
+</style>
+</head>
+<body>
+
+<div class="hero">
+
+<a href="index.php" class="button button1">Login</a>
+<a href="index.php" class="button button1">Sign up</a>
+
+
+<div class="p1p">
+<p>EasyGo</p>
+<h3> Your safety is our priority</h3>
+</div>
+
+<div class="highway"></div>
+<div class="city"></div>
+<div class="car">
+<img src="car.png">
+</div>
+
+<div class="wheel">
+<img src="wheel.png" class="back-wheel">
+<img src="wheel.png" class="front-wheel">
+</div>
+
+</div>
+
+
+</body>
+</html>
