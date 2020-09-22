@@ -13,7 +13,8 @@ where user can book the empty parking slots for booking.
 The system is implemented with the help of Python3.6.x with MobileNetSSD
 and YOLOv2 deep learning models and HTML,CSS & PHP is used for UI
 
-The project is tested on Windows10 and RaspberryPi 3b+
+The project is tested on Windows10 and RaspberryPi 3b+ <br />
+The "user" scripts should be copied to your wamp64/www directory.
 
 # Approach
 • [ADMIN]Part 1: First the camera will detect the empty parking slots / we can also
